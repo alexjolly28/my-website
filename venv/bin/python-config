@@ -1,4 +1,4 @@
-#!/home/alex/temp_site/venv/bin/python
+#!/Users/alexjolly/dragon/django_projects/temp_site/venv/bin/python
 
 import sys
 import getopt
