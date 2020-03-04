@@ -1,11 +1,11 @@
-{% load static %}
+{% load staticfiles %}
 <!doctype html>
 <html lang="en">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href={% static 'temp_app/img/favicon.png' %}type="image/png">
+        <link rel="icon" href="{% static "temp_app/img/favicon.png" %}" type="image/png">
         <title>Home</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="{% static 'temp_app/css/bootstrap.css' %}">
@@ -18,8 +18,8 @@
 
 
         <!-- main css -->
-        <link rel="stylesheet" href="{% static 'temp_app/css/style.css' %}">
-        <link rel="stylesheet" href="{% static 'temp_app/css/responsive.css' %}">
+        <link rel="stylesheet" href="{% static "temp_app/css/style.css" %}">
+        <link rel="stylesheet" href="{% static "temp_app/css/responsive.css" %}">
     </head>
     <body>
 
@@ -29,25 +29,26 @@
            		<div class="banner_inner d-flex align-items-center">
 					<div class="banner_content">
 						<div class="media">
-							<div class="d-flex">
+							<div class="">
 								<img src="{% static 'temp_app/img/personal.jpg' %}" alt="">
 							</div>
 							<div class="media-body">
-								<div class="personal_text">
+								<ul class="personal_text">
 									<h6>Hello Everybody, i am</h6>
 									<h3>Alex Jolly</h3>
-{#									<h4>Reaserch And Developemet</h4>#}
+									<h4>Reaserch And Developemet</h4>
 									<p>Three years plus experience working in Hardware and IOT. Have done projects on Deep-Learning  Computer Vision . Actively participated and have also held Hands- on workshops on IOT and Machine Learning under IEEE and FAB community .A core member of FAB-LAB FISAT. 
                                      </p>
-									<ul class="list basic_info">
-									</ul>
-									<ul class="list personal_social">
+									<a class="list basic_info btn btn-default cv" href="{% url 'resume'  %}" target="_blank"> Download Resume</a>
+
+									<ul class="list personal_social d-flex justify-content-center">
 										<li><a href="https://github.com/alexjolly28"><i class="fa fa-github"></i></a></li>
 										<li><a href="https://twitter.com/Alex__Jolly"><i class="fa fa-twitter"></i></a></li>
 										<li><a href="https://www.linkedin.com/in/gettoalexjolly/"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="https://www.instagram.com/build_from_zero/"><i class="fa fa-instagram"></i></a></li>
 
 									</ul>
+
 								</div>
 							</div>
 						</div>

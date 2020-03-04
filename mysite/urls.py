@@ -19,6 +19,7 @@ from temp_app import views
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('resume/',views.download,name='resume')
     # path('admin/', admin.site.urls),
 
 ]
