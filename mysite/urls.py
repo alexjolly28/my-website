@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from temp_app import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.home, name='home'),
     path('resume/',views.download,name='resume')
     # path('admin/', admin.site.urls),
 
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
